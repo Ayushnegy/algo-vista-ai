@@ -22,7 +22,7 @@ class Settings(BaseModel):
         default=os.getenv("ML_AUTO_TRAIN", "false").lower() in {"1", "true", "yes"},
     )
     ml_model_path: str = Field(
-        default=os.getenv("ML_MODEL_PATH", "backend/models/model.joblib"),
+        default=os.getenv("ML_MODEL_PATH", "models/model.joblib"),
     )
     ml_confidence_threshold: float = Field(
         default=float(os.getenv("ML_CONFIDENCE_THRESHOLD", "0.55")),
