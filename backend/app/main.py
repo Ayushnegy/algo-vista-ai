@@ -10,10 +10,12 @@ from app.api.export import router as export_router
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="AlgoVista AI - Adaptive Algorithm Recommendation System", version="0.1.0")
+    app = FastAPI(
+        title="AlgoVista AI - Adaptive Algorithm Recommendation System",
+        version="0.1.0",
+    )
 
-    # Light-frontend dev server integration.
-   origins = ["*"]
+    origins = ["*"]
 
     app.add_middleware(
         CORSMiddleware,
