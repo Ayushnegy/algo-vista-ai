@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Node
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
