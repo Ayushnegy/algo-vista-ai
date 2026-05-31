@@ -6,7 +6,7 @@ import type {
 
 const API_BASE =
   (import.meta as any).env?.VITE_API_URL ||
-  'http://localhost:8000'
+  'https://algovista-backend.onrender.com'
 
 async function postJson<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {
